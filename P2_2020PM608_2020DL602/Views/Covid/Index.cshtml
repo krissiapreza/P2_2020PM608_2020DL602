@@ -6,7 +6,7 @@
 <br>
 <br>
 <h4>Reportar Casos</h4>
-<form method="post">
+<form method="post" asp-action="agregarCasos">
     <div class="row p-4">
         <div class="col">
             <label>Departamentos</label>
@@ -33,7 +33,7 @@
     </div> 
     <div class="row p-4">
         <div class="col">
-            <input class="col-12 btn btn-success" type="submit" name="response" value="Guardar Registro" @*formaction=@Url.Action("agregarCasos")*@ formmethod="post" class="btn btn-primary" />
+            <input class="col-12 btn btn-success" type="submit" name="response" value="Guardar Registro" formmethod="post" />
         </div>
     </div>
 

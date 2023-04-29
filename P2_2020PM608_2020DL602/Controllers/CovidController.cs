@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using P2_2020PM608_2020DL602.Models;
 
-namespace P2_2020RC6005_2020UL601.Controllers
+namespace P2_2020PM608_2020DL602.Controllers
 {
     public class CovidController : Controller
     {
@@ -81,7 +81,7 @@ namespace P2_2020RC6005_2020UL601.Controllers
 			_cxt.casosReportados.Add(cs);
 			_cxt.SaveChanges();
 
-			return View("Index");
+            return RedirectToAction("Index");
         }
 
 

@@ -6,6 +6,7 @@ namespace P2_2020PM608_2020DL602.Models
     {
         [Key]
         public int generoID { get; set; }
+        
         public string? genero { get; set; }
     }
 }
