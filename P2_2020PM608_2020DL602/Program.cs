@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using P2_2020PM608_2020DL602.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+//------\
+builder.Services.AddDbContext<parcialDbContext>(opt =>
+ opt.UseSqlServer(builder.Configuration.GetConnectionString("parcialDbConnection")));
 
 var app = builder.Build();
 
